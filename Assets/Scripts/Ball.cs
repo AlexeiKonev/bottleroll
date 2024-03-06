@@ -18,8 +18,8 @@ namespace Hypercasual
 
                 Boot.Instance.actUpdateTextScore.Invoke();
 
-                //Destroy(collision.gameObject);
-                 
+                collision.gameObject.SetActive(false);
+
 
             }
         }
