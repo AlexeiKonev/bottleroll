@@ -15,10 +15,10 @@ namespace Hypercasual
                 Debug.Log("bottle");
 
                 Boot.Instance.score.AddScore();
-
+                collision.gameObject.SetActive(false);
                 Boot.Instance.actUpdateTextScore.Invoke();
 
-                collision.gameObject.SetActive(false);
+               
 
 
             }

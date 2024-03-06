@@ -1001,7 +1001,7 @@ GameObject:
   - component: {fileID: 9118405059867027703}
   m_Layer: 0
   m_Name: bottle
-  m_TagString: Enemy
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1018,9 +1018,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 4595524907103940518}
-  - {fileID: 6848745338972000626}
   - {fileID: 913198082614221847}
+  - {fileID: 4595524907103940518}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1706,8 +1705,8 @@ GameObject:
   - component: {fileID: 4028834139865407295}
   - component: {fileID: 4448979538031200236}
   - component: {fileID: 1801293597932960089}
-  - component: {fileID: 6605397979500080146}
-  - component: {fileID: 3454388684210174383}
+  - component: {fileID: 157911452814706176}
+  - component: {fileID: 4577456733202968773}
   m_Layer: 0
   m_Name: static
   m_TagString: Enemy
@@ -1788,7 +1787,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6236063249308566061}
   serializedVersion: 4
-  m_Mass: 2.02
+  m_Mass: 1.16
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -1807,7 +1806,29 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &6605397979500080146
+--- !u!64 &157911452814706176
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6236063249308566061}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 670494556502634678, guid: 980b3cd7eee9e584083c3fa61dc9bdb4, type: 3}
+--- !u!114 &4577456733202968773
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1842,27 +1863,6 @@ MonoBehaviour:
   - {fileID: 8735421832711395253}
   - {fileID: 1432681625263374171}
   - {fileID: 8746316344357079607}
---- !u!65 &3454388684210174383
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6236063249308566061}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1.6907438, y: 1.6907436, z: 6.22585}
-  m_Center: {x: 0, y: -1.4987814e-14, z: 2.109347}
 --- !u!1 &6506813501827261657
 GameObject:
   m_ObjectHideFlags: 0
@@ -2265,37 +2265,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -587995367818967082, guid: 980b3cd7eee9e584083c3fa61dc9bdb4, type: 3}
---- !u!1 &8207754130725791448
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 6848745338972000626}
-  m_Layer: 0
-  m_Name: bottle static
-  m_TagString: Enemy
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &6848745338972000626
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8207754130725791448}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.61, y: 0.61, z: 0.61}
-  m_ConstrainProportionsScale: 1
-  m_Children: []
-  m_Father: {fileID: 9118405059867027703}
-  m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8357409474224555521
 GameObject:
   m_ObjectHideFlags: 0
