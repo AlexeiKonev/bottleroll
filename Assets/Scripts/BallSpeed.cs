@@ -12,7 +12,7 @@ namespace Hypercasual
 
         [SerializeField] private float magnitude ;
 
-        void Update()
+        void FixedUpdate()
         {
             magnitude= GetComponent<Rigidbody>().angularVelocity.magnitude;
             if (GetComponent<Rigidbody>().angularVelocity.magnitude < desiredAngularVelocity)
